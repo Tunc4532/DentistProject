@@ -26,7 +26,7 @@ namespace Dentist.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GeAboutById(int id)
+        public async Task<IActionResult> GetAboutById(int id)
         {
             return Ok(await _mediator.Send(new GetAboutByIdQuery(id)));
         }

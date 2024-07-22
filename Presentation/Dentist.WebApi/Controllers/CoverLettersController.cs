@@ -26,7 +26,7 @@ namespace Dentist.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GeCoverLetterById(int id)
+        public async Task<IActionResult> GetCoverLetterById(int id)
         {
             return Ok(await _mediator.Send(new GetCoverLetterByIdQuery(id)));
         }

@@ -27,7 +27,7 @@ namespace Dentist.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GeCategoryCardById(int id)
+        public async Task<IActionResult> GetCategoryCardById(int id)
         {
             return Ok(await _mediator.Send(new GetCategoryCardByIdQuery(id)));
         }
