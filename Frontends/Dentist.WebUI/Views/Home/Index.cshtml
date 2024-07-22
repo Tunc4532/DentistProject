@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+</head>
+
+<body id="top">
+	@await Component.InvokeAsync("_HomeSliderComponentPartial")
+
+	
+	@await Component.InvokeAsync("_HomeSliderCardComponentPartial")
+
+	@await Component.InvokeAsync("_HomeServicePromotionComponentPartial")
+
+	@* @await Component.InvokeAsync("_HomeStatisticComponentPartial") *@
+
+	@await Component.InvokeAsync("_HomeCategoryCardComponentPartial")
+
+	@await Component.InvokeAsync("_HomeMakeAnAppointmentComponentPartial")
+
+	@await Component.InvokeAsync("_HomeCommentComponentPartial")
+
+	@await Component.InvokeAsync("_HomeSupportPartnerComponentPartial")
+
+
+</body>
+</html>

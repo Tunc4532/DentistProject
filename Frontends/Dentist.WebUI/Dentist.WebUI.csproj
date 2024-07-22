@@ -1,0 +1,211 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\novena\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\novena\.git\config" />
+    <None Include="wwwroot\novena\.git\description" />
+    <None Include="wwwroot\novena\.git\FETCH_HEAD" />
+    <None Include="wwwroot\novena\.git\HEAD" />
+    <None Include="wwwroot\novena\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\novena\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\novena\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\novena\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\novena\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\novena\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\novena\.git\hooks\update.sample" />
+    <None Include="wwwroot\novena\.git\index" />
+    <None Include="wwwroot\novena\.git\info\exclude" />
+    <None Include="wwwroot\novena\.git\logs\HEAD" />
+    <None Include="wwwroot\novena\.git\logs\refs\heads\main" />
+    <None Include="wwwroot\novena\.git\logs\refs\remotes\origin\main" />
+    <None Include="wwwroot\novena\.git\objects\01\cd41ae55b43c82042eed736938184901f933d0" />
+    <None Include="wwwroot\novena\.git\objects\03\b580c6e8e669333694ba70f6846ed87985bd22" />
+    <None Include="wwwroot\novena\.git\objects\06\033d42525bca98229a8365d0fd005841c71aa7" />
+    <None Include="wwwroot\novena\.git\objects\06\3e607e8282278c0a29997dcf5108c6a69bf7af" />
+    <None Include="wwwroot\novena\.git\objects\08\2163572efb25e05d7a9c022006c37c602258b1" />
+    <None Include="wwwroot\novena\.git\objects\0a\a5fae14e5c2cb35c706ff91ae7f9e89da2d8b6" />
+    <None Include="wwwroot\novena\.git\objects\0c\0121a777e2e6911f743917ab6fec4716a747ff" />
+    <None Include="wwwroot\novena\.git\objects\0d\be76a5830e5e728e27410edd690b59d8217689" />
+    <None Include="wwwroot\novena\.git\objects\0f\3e1cfb1b8a34b2f1d47fe32f0a6209a4cbaed8" />
+    <None Include="wwwroot\novena\.git\objects\0f\751307f7cc901f559cf8e77651a2e8a6cfa561" />
+    <None Include="wwwroot\novena\.git\objects\12\32fcab02e2d8aea7ad438373a95e7bf6086f87" />
+    <None Include="wwwroot\novena\.git\objects\12\3820b259d0525eb579af90e4e1cf351062e180" />
+    <None Include="wwwroot\novena\.git\objects\13\71d715908bd6982ca91275ef3a6531ccc115b6" />
+    <None Include="wwwroot\novena\.git\objects\15\e2cdbe5ce94818022504eca68de780ffe2796f" />
+    <None Include="wwwroot\novena\.git\objects\15\f8708b622734ae176a12372fbb77f35b5b5fc7" />
+    <None Include="wwwroot\novena\.git\objects\18\43e8765492d9ff3529043ef472b2fa9010a3d5" />
+    <None Include="wwwroot\novena\.git\objects\1a\f0c0f26c6638cb8de6b2b3874c6bfdc091a7a4" />
+    <None Include="wwwroot\novena\.git\objects\1e\d9548c31b1fd36c5fd8c128e9fd4d2c45a81d7" />
+    <None Include="wwwroot\novena\.git\objects\20\8805a5919f09c2b54a9670761fcba519c6eee9" />
+    <None Include="wwwroot\novena\.git\objects\24\b0f4b4df59f9aa230f8618a982e4b52c92dd30" />
+    <None Include="wwwroot\novena\.git\objects\24\eb0bf76c0f88745158ab0ecbff2849d4b066eb" />
+    <None Include="wwwroot\novena\.git\objects\25\8fe4d3dcebefc521b2c2b2bc7d0c89c5c5e619" />
+    <None Include="wwwroot\novena\.git\objects\29\e87cb552284a64270485d6de7c507eef6d9aa1" />
+    <None Include="wwwroot\novena\.git\objects\2a\075a58597c4c86a3ada670c4987563cf53227a" />
+    <None Include="wwwroot\novena\.git\objects\2b\15a1af8babed6c0178ff307552aadab8c85af3" />
+    <None Include="wwwroot\novena\.git\objects\2c\3334ec07c9c649d679d64302e535c1de4b9661" />
+    <None Include="wwwroot\novena\.git\objects\2c\bab9ca97723bc24c50315a0a9bd155db4e0aa5" />
+    <None Include="wwwroot\novena\.git\objects\2d\ba2c5f61b59b1cbac7205bc3d56a592a49d5cf" />
+    <None Include="wwwroot\novena\.git\objects\2d\fef08b553226d42fb3a58a39055a14c76d6cfa" />
+    <None Include="wwwroot\novena\.git\objects\2f\fb27ad0425d44a7f901b06406cda546ef35b8c" />
+    <None Include="wwwroot\novena\.git\objects\30\a8e8b757ae72a286387764830cfd776e83f4a4" />
+    <None Include="wwwroot\novena\.git\objects\32\bbcf22d6a6091f31d1d54dca397a3a19787dd4" />
+    <None Include="wwwroot\novena\.git\objects\35\1e09791801bc94ae08f0733ddc31e48749cb2c" />
+    <None Include="wwwroot\novena\.git\objects\35\6467687f39ea81feb15b2ef669142c324894c1" />
+    <None Include="wwwroot\novena\.git\objects\37\1fa6f99bd9976ed6015ccdba26023251b5b184" />
+    <None Include="wwwroot\novena\.git\objects\38\b6f01ec540e1a079a4c8cf8e186df431f1087a" />
+    <None Include="wwwroot\novena\.git\objects\39\baf1122929c691e5ac0ae18034a8d37aca8b6c" />
+    <None Include="wwwroot\novena\.git\objects\3d\7ea3a5ca72a235112ae82d3078b976b01137cf" />
+    <None Include="wwwroot\novena\.git\objects\3d\946b723e89606e0adfc16aeb53d650fd987bd3" />
+    <None Include="wwwroot\novena\.git\objects\3e\888e8076180a4aed6b35835ffb7be30b759ff6" />
+    <None Include="wwwroot\novena\.git\objects\40\b1f9a639750ebe5129e5d0c4fa575b9a39d2ff" />
+    <None Include="wwwroot\novena\.git\objects\44\1cc548e1e1002da62fb22c1fc960b7d3677cc5" />
+    <None Include="wwwroot\novena\.git\objects\45\1c0947e3095af4a477f6ed691e17d69da2a9fd" />
+    <None Include="wwwroot\novena\.git\objects\47\4339b9034cbd4867c635d1cc7506ac4e8f9ddc" />
+    <None Include="wwwroot\novena\.git\objects\47\f0017e9c7a37959e51134bdbfb44876ef40ebe" />
+    <None Include="wwwroot\novena\.git\objects\48\002ce2fc23f94dfc64ec48e0197bb0487b8ea9" />
+    <None Include="wwwroot\novena\.git\objects\4b\3c9340c1108736aee9d2a02da752b42dee2f95" />
+    <None Include="wwwroot\novena\.git\objects\4c\acef52c3bcb0ee14e41c4116fe0ad6e2453abb" />
+    <None Include="wwwroot\novena\.git\objects\52\63759d85777cb26034a5d178ee7e6ea0c80150" />
+    <None Include="wwwroot\novena\.git\objects\54\9e70b11b9d4f37f09b5bb3a9410bc702c0673d" />
+    <None Include="wwwroot\novena\.git\objects\56\7979b638c8e537f3f4560b203b8f0a2433f95c" />
+    <None Include="wwwroot\novena\.git\objects\56\e15db4f6bb2f1078d19f3ea7a2c5f7769a3a9f" />
+    <None Include="wwwroot\novena\.git\objects\57\0ec15e6865056e9bea3e0cd4f1cadb83ca4d78" />
+    <None Include="wwwroot\novena\.git\objects\57\477e848b989426ab54c7b9ebff5eaf2318c1c6" />
+    <None Include="wwwroot\novena\.git\objects\60\4be491640a2c5d8084af7d1bf1f365b3751d41" />
+    <None Include="wwwroot\novena\.git\objects\60\9ece0a51a92e1f4a8bc1b318850c043b30bd86" />
+    <None Include="wwwroot\novena\.git\objects\62\0d96629e6211398fe9567fffc97b0282ce2e26" />
+    <None Include="wwwroot\novena\.git\objects\62\c27a27d5dc703825042ccb0cfac2b3207c83f6" />
+    <None Include="wwwroot\novena\.git\objects\63\aee90f5e2573adc7dd4b4e1b6a23c98207d988" />
+    <None Include="wwwroot\novena\.git\objects\63\e59919a0978ed42474d7565064f24f85b51888" />
+    <None Include="wwwroot\novena\.git\objects\64\5c87282528a36a5cada24e686ae69256a6658f" />
+    <None Include="wwwroot\novena\.git\objects\69\e27a849f6647b592303b9dc5cea9635475bbd2" />
+    <None Include="wwwroot\novena\.git\objects\6a\2a09953cbef4aeba3b447dfb1fcb13fc262c0d" />
+    <None Include="wwwroot\novena\.git\objects\6a\b4935f251d717754685bfa5df029e7dbdc5e98" />
+    <None Include="wwwroot\novena\.git\objects\6b\5c992b50c152050261ecf7792f83d6de68c775" />
+    <None Include="wwwroot\novena\.git\objects\6e\c60f026c50ba3631ba52ce9b6e6ce349b19c9f" />
+    <None Include="wwwroot\novena\.git\objects\6f\9509c88bed7080d496fc5e1d87a9315e30549d" />
+    <None Include="wwwroot\novena\.git\objects\70\8f8f273810d9f85045c2ac8ae5a29459f2303c" />
+    <None Include="wwwroot\novena\.git\objects\72\f11b8d84382dab335c6b123ba4ffabcb01ce4c" />
+    <None Include="wwwroot\novena\.git\objects\74\3bc79c903b8db956f2ba81b0121198047f64f4" />
+    <None Include="wwwroot\novena\.git\objects\75\f03d7bb3d4c7b0b02a18c2562424f28a6d09bd" />
+    <None Include="wwwroot\novena\.git\objects\76\e9f798bf2fe6bb3d1e58a17fee072254f46209" />
+    <None Include="wwwroot\novena\.git\objects\77\4aa656d7774d9bb1d160f9525873914278aeff" />
+    <None Include="wwwroot\novena\.git\objects\77\c35034ef623efc4d502c58cfba276d1def04cf" />
+    <None Include="wwwroot\novena\.git\objects\79\e1038ca455d5632b65eaf6e9b934b037759498" />
+    <None Include="wwwroot\novena\.git\objects\7a\1878ff6a923d70be37ba505dfef8fef8a1bf00" />
+    <None Include="wwwroot\novena\.git\objects\7a\576bb506c31125118d97ca4dd5461dd6a79bf3" />
+    <None Include="wwwroot\novena\.git\objects\7c\69c567510071478c3b664b268a8e671b67f539" />
+    <None Include="wwwroot\novena\.git\objects\7f\e63e107ba446e4bf9f255062653f2d0633f456" />
+    <None Include="wwwroot\novena\.git\objects\81\f5ae3246711478002c3a3206d3497ee8286d5e" />
+    <None Include="wwwroot\novena\.git\objects\85\ebbf5c932ad0cec02dc1206aad848894821780" />
+    <None Include="wwwroot\novena\.git\objects\86\7a46b5dbed44d53f9f62c8448194d8707683f3" />
+    <None Include="wwwroot\novena\.git\objects\8d\1fc9f115b4c48bb322571f79fbfaabb94f849d" />
+    <None Include="wwwroot\novena\.git\objects\8e\e99721bb81b59a5e1ceee1d3256b15f907d96b" />
+    <None Include="wwwroot\novena\.git\objects\8e\f4ce5200a832aa44edec05cd11d15529dd220e" />
+    <None Include="wwwroot\novena\.git\objects\90\3648491bd6df04d11389731b84a411c6f0258b" />
+    <None Include="wwwroot\novena\.git\objects\92\e3fe871295c44f8fa58ddc7ac242463f13e6bd" />
+    <None Include="wwwroot\novena\.git\objects\94\d24a716cf2d541e08c05b8aad539a25bb4da3e" />
+    <None Include="wwwroot\novena\.git\objects\96\4ae8dfc44dc2a6b736adc079e2da8fb7aee2c1" />
+    <None Include="wwwroot\novena\.git\objects\9c\f1673fae1462a5793220dd488a37523f17be51" />
+    <None Include="wwwroot\novena\.git\objects\9d\03461b653373f7cda3b4af104c6bca07f9892b" />
+    <None Include="wwwroot\novena\.git\objects\9d\a2fff36cc0ed013618b5153aea06c5a44a560d" />
+    <None Include="wwwroot\novena\.git\objects\a6\2995b669651af7ba75ea09b416012148678a17" />
+    <None Include="wwwroot\novena\.git\objects\a8\fb574389faeca93b2f7a4d041252b5f960ba2e" />
+    <None Include="wwwroot\novena\.git\objects\aa\60714287980a4aeac000dfbca5f55294c50d11" />
+    <None Include="wwwroot\novena\.git\objects\ac\b01ef1ff500a9e68d997de633a1a9a47df43be" />
+    <None Include="wwwroot\novena\.git\objects\ad\5c9509af1ed510a74dd51093aa6dbeb80b3545" />
+    <None Include="wwwroot\novena\.git\objects\ae\32bde28cfdada887aea2163e13f0ee3995b7af" />
+    <None Include="wwwroot\novena\.git\objects\b0\77ba64160f829955919fded01ecc2f11e72b26" />
+    <None Include="wwwroot\novena\.git\objects\b1\a86f600b54a8f2856539985fdf4fe1b2474f1a" />
+    <None Include="wwwroot\novena\.git\objects\b2\504f0ccf1dffbe884cb8db4db671eb60af81e3" />
+    <None Include="wwwroot\novena\.git\objects\b3\6a66a6c454fb901133b8bce089a5ff7f74f871" />
+    <None Include="wwwroot\novena\.git\objects\b5\41faa4d2b297395121c7ab25712ae4cd6601f9" />
+    <None Include="wwwroot\novena\.git\objects\b6\1dbcd26737ff23aef369e9c53136a808df6b1f" />
+    <None Include="wwwroot\novena\.git\objects\b6\330dd69d1e28a6573769a21330a9effb367fcb" />
+    <None Include="wwwroot\novena\.git\objects\ba\6d23563f2ca6fc9b2f6d54dd2b833d14302553" />
+    <None Include="wwwroot\novena\.git\objects\bf\c49d6a7f05119c8be8ca5dd6e1d08b350882ff" />
+    <None Include="wwwroot\novena\.git\objects\c0\f906f5ddc260939daf25b19aee8123d56309d2" />
+    <None Include="wwwroot\novena\.git\objects\c2\e30ce32371e653938e0412d06baad067c048fc" />
+    <None Include="wwwroot\novena\.git\objects\c4\c0d1f95cd3ca1b97ed8e7f7f22a91fa24b4edf" />
+    <None Include="wwwroot\novena\.git\objects\c7\18ca861db3266d5e6ec0fb6b8a85ae9d792c3f" />
+    <None Include="wwwroot\novena\.git\objects\c7\897ea21514d0fa40273a19bbbc2fdcd8ddebcc" />
+    <None Include="wwwroot\novena\.git\objects\c8\2c0ea6afdb49d9f2089a0df5fdebbe20772330" />
+    <None Include="wwwroot\novena\.git\objects\ca\2340050f8a966159be628d12ebc18dc51d830c" />
+    <None Include="wwwroot\novena\.git\objects\cb\6d832b195b2552d5a13de3108b2ee89ea34225" />
+    <None Include="wwwroot\novena\.git\objects\d2\8385072a68b7e90ffa12426386ff989e1a4aa3" />
+    <None Include="wwwroot\novena\.git\objects\d3\9307efb43dee09b40c8ee2857c95b525a90da6" />
+    <None Include="wwwroot\novena\.git\objects\d5\2d011746e718f09372ee52917b328693536c95" />
+    <None Include="wwwroot\novena\.git\objects\d6\3af0eca3272db0b612adda0255df8ee9ab804f" />
+    <None Include="wwwroot\novena\.git\objects\d9\864c2d065863afe1d89d4f0e270a8c0496d27e" />
+    <None Include="wwwroot\novena\.git\objects\da\59f0e0cad2742430502597eb318c20f99ff9b0" />
+    <None Include="wwwroot\novena\.git\objects\dc\331e10e1bef4488d2ed3e1aa17270cca8b2233" />
+    <None Include="wwwroot\novena\.git\objects\dc\4fcc90ceb330fc1bf7c693267ec9596821c862" />
+    <None Include="wwwroot\novena\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include="wwwroot\novena\.git\objects\e0\6fc183d9ae69d245c6d6b9750f889ca4d6103e" />
+    <None Include="wwwroot\novena\.git\objects\e0\e6e9760bc04861cc4771e327f22ed7962e0858" />
+    <None Include="wwwroot\novena\.git\objects\e1\56ec8bfc31e20ed4ec0c979d8cddc5e7dc9927" />
+    <None Include="wwwroot\novena\.git\objects\e1\6982a44b0be421751416519d2e1223434d46e9" />
+    <None Include="wwwroot\novena\.git\objects\e1\e165478030ec2588959636c212e8c61e3692bf" />
+    <None Include="wwwroot\novena\.git\objects\e1\e5fd5fc9d2f4e4ef47230cae7ef13ee5467637" />
+    <None Include="wwwroot\novena\.git\objects\e4\5e1ac70bb5b6852b7e84d1d0837937ac393f35" />
+    <None Include="wwwroot\novena\.git\objects\e5\cb383cc582b9f9e389010615b92595724faba5" />
+    <None Include="wwwroot\novena\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include="wwwroot\novena\.git\objects\e7\5e696359ab3b3c4f87716764852c2ffedf89a4" />
+    <None Include="wwwroot\novena\.git\objects\eb\fca7fdd767ad892b5331d5177b1fe327eacc8b" />
+    <None Include="wwwroot\novena\.git\objects\ec\4230193b497cfa3dc79c96633f608d17ae41be" />
+    <None Include="wwwroot\novena\.git\objects\ec\5f39507667e4e7705f81c494d7368439d69ec5" />
+    <None Include="wwwroot\novena\.git\objects\ec\9105f9c0be76bfec34884ff4ea5f7aaa1f81ee" />
+    <None Include="wwwroot\novena\.git\objects\f0\7a2769d1be4918a4a3581dc4b739863696de24" />
+    <None Include="wwwroot\novena\.git\objects\f2\64889e2680f2735c6a476ef82ded6dc02bd067" />
+    <None Include="wwwroot\novena\.git\objects\f4\ca9b24ba13e964450fef6135b85e47cf109aa0" />
+    <None Include="wwwroot\novena\.git\objects\f6\d10060f4b3a2f6de4b665ec2163140579e1551" />
+    <None Include="wwwroot\novena\.git\objects\fb\90ad0d3f7ca4e50dedd8043ff666eb5b717de2" />
+    <None Include="wwwroot\novena\.git\objects\fc\01eb83f305bcd595be9c29d7f6981e6df8fbfc" />
+    <None Include="wwwroot\novena\.git\objects\fd\5555a5a3e178d6089eb1389c587709441fbb43" />
+    <None Include="wwwroot\novena\.git\refs\heads\main" />
+    <None Include="wwwroot\novena\.git\refs\remotes\origin\main" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Customer\Controllers\" />
+    <Folder Include="Areas\Customer\Data\" />
+    <Folder Include="Areas\Customer\Models\" />
+    <Folder Include="Areas\Customer\Views\" />
+    <Folder Include="Areas\Dentist\Controllers\" />
+    <Folder Include="Areas\Dentist\Data\" />
+    <Folder Include="Areas\Dentist\Models\" />
+    <Folder Include="Areas\Dentist\Views\" />
+    <Folder Include="wwwroot\novena\.git\objects\info\" />
+    <Folder Include="wwwroot\novena\.git\objects\pack\" />
+    <Folder Include="wwwroot\novena\.git\refs\tags\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dentist.Dtos\Dentist.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>

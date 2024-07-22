@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	@await Component.InvokeAsync("_UILayoutHeadComponentPartial")
+</head>
+
+<body id="top">
+
+	@await Component.InvokeAsync("_UILayoutNavbarComponentPartial")
+
+	@RenderBody()
+
+	@await Component.InvokeAsync("_UILayoutFooterComponentPartial")
+
+	@await Component.InvokeAsync("_UILayoutScriptsComponentPartial")
+</body>
+</html>
