@@ -27,6 +27,7 @@ namespace Dentist.Application.Features.Mediator.Handlers.SupportHandlers
             return values.Select(x => new GetSupportQueryResult
             {
                 Image = x.Image,
+                SupportId = x.SupportId,
 
             }).ToList();
         }

@@ -29,8 +29,8 @@ namespace Dentist.Application.Features.Mediator.Handlers.SocialMediaHandlers
                 Icon = x.Icon,
                 Url = x.Url,
                 DoctorId = x.DoctorId,
-                SocialMediaId = x.SocialMediaId
-
+                SocialMediaId = x.SocialMediaId,
+                
             }).ToList();
         }
     }
