@@ -12,6 +12,7 @@ namespace Dentist.Domain.Entities
         public string Day { get; set; }
         public string Hour { get; set; }
         public string Phone { get; set; }
+        public int DoctorId { get; set; }
         public Doctor Doctor { get; set; }
     }
 }
