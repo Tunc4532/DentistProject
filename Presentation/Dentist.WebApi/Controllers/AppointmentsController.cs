@@ -49,7 +49,7 @@ namespace Dentist.WebApi.Controllers
 		public async Task<IActionResult> DeleteAppointment(int id)
 		{
 			await _mediator.Send(new RemoveAppointmentCommand(id));
-			return Ok("Appointment deleted succesfully");
+			return Ok("Appointment deletede succesfully");
 		}
 
 
