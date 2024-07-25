@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\adminkit-3.1.0\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\adminkit-3.1.0\.github\ISSUE_TEMPLATE\config.yml" />
+    <None Include="wwwroot\adminkit-3.1.0\.github\ISSUE_TEMPLATE\feature_request.md" />
     <None Include="wwwroot\novena\.git\COMMIT_EDITMSG" />
     <None Include="wwwroot\novena\.git\config" />
     <None Include="wwwroot\novena\.git\description" />
@@ -179,19 +182,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Areas\Customer\Controllers\" />
-    <Folder Include="Areas\Customer\Data\" />
-    <Folder Include="Areas\Customer\Models\" />
-    <Folder Include="Areas\Customer\Views\" />
-    <Folder Include="Areas\Dentist\Controllers\" />
     <Folder Include="Areas\Dentist\Data\" />
     <Folder Include="Areas\Dentist\Models\" />
-    <Folder Include="Areas\Dentist\Views\" />
+    <Folder Include="Areas\Patient\Data\" />
+    <Folder Include="Areas\Patient\Models\" />
     <Folder Include="wwwroot\novena\.git\objects\info\" />
     <Folder Include="wwwroot\novena\.git\objects\pack\" />
     <Folder Include="wwwroot\novena\.git\refs\tags\" />
