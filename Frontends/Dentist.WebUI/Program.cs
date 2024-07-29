@@ -1,11 +1,14 @@
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+
+builder.Services.AddDataProtection().PersistKeysToFileSystem(new DirectoryInfo(builder.Environment.ContentRootPath + "\\tmp"));
 
 var app = builder.Build();
 

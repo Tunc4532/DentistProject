@@ -12,7 +12,8 @@ namespace Dentist.Persistance.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=monsterhuma268\\SQLEXPRESS; initial Catalog=DentistDb; integrated Security=true;TrustServerCertificate=true");
+            //optionsBuilder.UseSqlServer("Server=monsterhuma268\\SQLEXPRESS; initial Catalog=DentistDb; integrated Security=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=MONSTERHUMA268;Database=DentistDb;User=sa;Password=123456tunc; Trusted_Connection = True; TrustServerCertificate = True; MultipleActiveResultSets = True; Integrated security = false; Connection Timeout = 0;");
         }
 
         public DbSet<About> Abouts { get; set; }
