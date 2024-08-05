@@ -1,0 +1,42 @@
+﻿@model List<ResultServicePromotionDto>
+@{
+    ViewData["Title"] = "ServicePromotionList";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hizmet Promosyonu Listesi</h4>
+            <a href="/Admin/ServicePromotion/CreateServicePromotion/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Hizmet Promosyonu Girişi</a><br /><br />
+            <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Başlık</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                    </thead>
+                    @foreach (var item in Model)
+                    {
+                        <tbody>
+                            <tr>
+                                <td>@item.Title</td>
+                                <td>
+                                    <button class="btn btn-danger deleteBtn" data-id="@item.ServicePromotionId"><i class="fas fa-trash-alt"></i>  Sil</button>
+                                </td>
+                                <td><a href="/Admin/ServicePromotion/UpdateServicePromotion/@item.ServicePromotionId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupDeleteConfirmation('.deleteBtn', '/Admin/ServicePromotion/RemoveServicePromotion/');
+    });
+</script>

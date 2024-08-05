@@ -1,0 +1,124 @@
+﻿@model CreateSliderCardDto
+@{
+    ViewData["Title"] = "CreateSliderCard";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni kaydırma kartı Girişi</h4>
+        <form method="post" id="createSliderCardForm">
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">İkon</label>
+                    <input type="text" class="form-control" asp-for="Icon" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Alt Başlık</label>
+                    <input type="text" class="form-control" asp-for="Subtitle" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="ImageUrl">Açıklama</label>
+                    <textarea cols="25" rows="5" asp-for="Description" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Başlık2</label>
+                    <input type="text" class="form-control" asp-for="Title2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">İkon2</label>
+                    <input type="text" class="form-control" asp-for="Icon2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Alt Başlık2</label>
+                    <input type="text" class="form-control" asp-for="Subtitle2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün 1</label>
+                    <input type="text" class="form-control" asp-for="day1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün 2</label>
+                    <input type="text" class="form-control" asp-for="day2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün 3</label>
+                    <input type="text" class="form-control" asp-for="day3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün saati 1</label>
+                    <input type="text" class="form-control" asp-for="Hour1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün saati 2</label>
+                    <input type="text" class="form-control" asp-for="Hour2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Gün saati 3</label>
+                    <input type="text" class="form-control" asp-for="Hour3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Başlık 3</label>
+                    <input type="text" class="form-control" asp-for="Title3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">İkon 3</label>
+                    <input type="text" class="form-control" asp-for="Icon3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Alt Başlık 3</label>
+                    <input type="text" class="form-control" asp-for="Subtitle3" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="ImageUrl">Açıklama 3</label>
+                    <textarea cols="25" rows="5" asp-for="Description3" class="form-control"></textarea>
+                </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                <i class="fas fa-save"></i>  Kaydet
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupFormSubmitWithAlert('createSliderCardForm', 'Başarıyla eklendi!', 2000);
+    });
+</script>

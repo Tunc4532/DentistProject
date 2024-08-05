@@ -23,7 +23,7 @@ namespace Dentist.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> SliderList()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7119/api/Sliders");
+            var responseMessage = await client.GetAsync("https://localhost:7119/api/Sliderses");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -50,7 +50,7 @@ namespace Dentist.WebUI.Areas.Admin.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createSliderDto);
             StringContent stringContent = new(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7119/api/Sliders", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7119/api/Sliderses", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("SliderList", "Slider", new { area = "Admin" });
@@ -65,7 +65,7 @@ namespace Dentist.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> RemoveSlider(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7119/api/Sliders/Delete/" + id);
+            var responseMessage = await client.GetAsync("https://localhost:7119/api/Sliderses/Delete/" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("SliderList", "Slider", new { area = "Admin" });
@@ -80,7 +80,7 @@ namespace Dentist.WebUI.Areas.Admin.Controllers
         {
             var client = _httpClientFactory.CreateClient();
 
-            var responseMessage = await client.GetAsync($"https://localhost:7119/api/Sliders/{id}");
+            var responseMessage = await client.GetAsync($"https://localhost:7119/api/Sliderses/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -100,7 +100,7 @@ namespace Dentist.WebUI.Areas.Admin.Controllers
 
             var jsonData = JsonConvert.SerializeObject(updateSliderDto);
             StringContent stringContent = new(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7119/api/Sliders/Update", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7119/api/Sliderses/Update", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("SliderList", "Slider", new { area = "Admin" });
