@@ -1,13 +1,13 @@
-﻿@model UpdateCoverLetterDto
+﻿@model UpdateServiceCardDto
 @{
-    ViewData["Title"] = "UpdateCoverLetter";
+    ViewData["Title"] = "UpdateServiceCard";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">Ön Yazı Güncelleme Paneli</h4>
-        <form method="post" id="updateCoverLetterForm">
-            <input type="hidden" asp-for="CoverLetterId" />
+        <form method="post" id="updateServiceCardForm">
+            <input type="hidden" asp-for="ServiceCardId" />
             <div class="form-group">
                 <div class="card-body">
                     <label for="Name">Başlık</label>
@@ -35,6 +35,6 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        setupFormSubmitWithAlert('updateCoverLetterForm', 'Başarıyla güncellendi!', 1500);
+        setupFormSubmitWithAlert('updateServiceCardForm', 'Başarıyla güncellendi!', 1500);
     });
 </script>

@@ -1,13 +1,13 @@
-﻿@model List<ResultCoverLetterDto>
+﻿@model List<ResultServiceCardDto>
 @{
-    ViewData["Title"] = "CoverLetterList";
+    ViewData["Title"] = "ServiceCardList";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
 <div class="col-xl-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Ön Yazı Listesi</h4>
-            <a href="/Admin/CoverLetter/CreateCoverLetter/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Ön Yazı Girişi</a><br /><br />
+            <h4 class="card-title">Hizmet Kartı Listesi</h4>
+            <a href="/Admin/ServiceCard/CreateServiceCard/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Hizmet Kartı Girişi</a><br /><br />
             <div class="table-responsive">
                 <table class="table table-striped mb-0">
                     <thead>
@@ -23,9 +23,9 @@
                             <tr>
                                 <td>@item.Title</td>
                                 <td>
-                                    <button class="btn btn-danger deleteBtn" data-id="@item.CoverLetterId"><i class="fas fa-trash-alt"></i>  Sil</button>
+                                    <button class="btn btn-danger deleteBtn" data-id="@item.ServiceCardId"><i class="fas fa-trash-alt"></i>  Sil</button>
                                 </td>
-                                <td><a href="/Admin/CoverLetter/UpdateCoverLetter/@item.CoverLetterId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
+                                <td><a href="/Admin/ServiceCard/UpdateServiceCard/@item.ServiceCardId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
                             </tr>
                         </tbody>
                     }
@@ -37,6 +37,6 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        setupDeleteConfirmation('.deleteBtn', '/Admin/CoverLetter/RemoveCoverLetter/');
+        setupDeleteConfirmation('.deleteBtn', '/Admin/ServiceCard/RemoveServiceCard/');
     });
 </script>
