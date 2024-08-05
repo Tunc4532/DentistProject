@@ -1,23 +1,29 @@
-﻿@model UpdateCategoryCardDto
+﻿@model UpdateCommentDto
 @{
-    ViewData["Title"] = "UpdateCategoryCard";
+    ViewData["Title"] = "UpdateComment";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title">Kategori Kart Gncelleme Paneli</h4>
-        <form method="post" id="updateCategoryCardForm">
-            <input type="hidden" asp-for="CategoryCardId" />
+        <h4 class="card-title">Yorum Güncelleme Paneli</h4>
+        <form method="post" id="updateCommentForm">
+            <input type="hidden" asp-for="CommentId" />
             <div class="form-group">
                 <div class="card-body">
-                    <label for="Title">Başlık</label>
+                    <label for="Name">Ad Soyad</label>
+                    <input type="text" class="form-control" asp-for="NameSurname" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Başlık</label>
                     <input type="text" class="form-control" asp-for="Title" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="card-body">
-                    <label for="Icon">Ikon</label>
-                    <input type="text" class="form-control" asp-for="Icon" required>
+                    <label for="Name">Görsel Url</label>
+                    <input type="text" class="form-control" asp-for="Image" required>
                 </div>
             </div>
             <div class="form-group">
@@ -35,6 +41,6 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        setupFormSubmitWithAlert('updateCategoryCardForm', 'Başarıyla güncellendi!', 1500);
+        setupFormSubmitWithAlert('updateCommentForm', 'Başarıyla güncellendi!', 1500);
     });
 </script>

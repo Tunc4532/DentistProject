@@ -1,19 +1,20 @@
-﻿@model List<ResultCategoryCardDto>
+﻿@model List<ResultCommentDto>
 @{
-    ViewData["Title"] = "CategoryCardList";
+    ViewData["Title"] = "CommentList";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
+
 <div class="col-xl-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Kategori Kart Listesi</h4>
-            <a href="/Admin/CategoryCard/CreateCategoryCard/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Kategori Kart Girişi</a><br /><br />
+            <h4 class="card-title">Yorum Listesi</h4>
+            <a href="/Admin/Comment/CreateComment/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Yorum Girişi</a><br /><br />
             <div class="table-responsive">
                 <table class="table table-striped mb-0">
                     <thead>
                         <tr>
+                            <th>Yorum Yapan</th>
                             <th>Başlık</th>
-                            <th>İkon</th>
                             <th>Sil</th>
                             <th>Güncelle</th>
                         </tr>
@@ -22,12 +23,12 @@
                     {
                         <tbody>
                             <tr>
+                                <td>@item.NameSurname</td>
                                 <td>@item.Title</td>
-                                <td>@item.Icon</td>
                                 <td>
-                                    <button class="btn btn-danger deleteBtn" data-id="@item.CategoryCardId"><i class="fas fa-trash-alt"></i>  Sil</button>
+                                    <button class="btn btn-danger deleteBtn" data-id="@item.CommentId"><i class="fas fa-trash-alt"></i>  Sil</button>
                                 </td>
-                                <td><a href="/Admin/CategoryCard/UpdateCategoryCard/@item.CategoryCardId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
+                                <td><a href="/Admin/Comment/UpdateComment/@item.CommentId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
                             </tr>
                         </tbody>
                     }
@@ -39,6 +40,6 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        setupDeleteConfirmation('.deleteBtn', '/Admin/CategoryCard/RemoveCategoryCard/');
+        setupDeleteConfirmation('.deleteBtn', '/Admin/Comment/RemoveComment/');
     });
 </script>
