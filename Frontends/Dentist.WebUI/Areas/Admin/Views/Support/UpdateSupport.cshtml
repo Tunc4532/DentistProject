@@ -1,0 +1,28 @@
+﻿@model UpdateSupportDto
+@{
+    ViewData["Title"] = "UpdateSupport";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Hakkımızda Güncelleme Paneli</h4>
+        <form method="post" id="updateSupportForm">
+            <input type="hidden" asp-for="SupportId" />
+            <div class="form-group">
+                <div class="card-body">
+                    <label for="Name">Görsel Url</label>
+                    <input type="text" class="form-control" asp-for="Image" required>
+                </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary waves-effect waves-light">
+                <i class="fas fa-edit"></i> Güncelle
+            </button>
+        </form>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupFormSubmitWithAlert('updateSupportForm', 'Başarıyla güncellendi!', 1500);
+    });
+</script>
