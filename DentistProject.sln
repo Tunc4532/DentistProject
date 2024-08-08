@@ -17,11 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dentist.Domain", "Core\Dent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dentist.Dtos", "Frontends\Dentist.Dtos\Dentist.Dtos.csproj", "{F2B16DE7-0823-4469-8BBA-2854312DDA66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dentist.WebUI", "Frontends\Dentist.WebUI\Dentist.WebUI.csproj", "{EC97B153-ED0B-4600-BF0E-FA573E720FD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dentist.WebUI", "Frontends\Dentist.WebUI\Dentist.WebUI.csproj", "{EC97B153-ED0B-4600-BF0E-FA573E720FD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dentist.Persistance", "Infrastructure\Dentist.Persistance\Dentist.Persistance.csproj", "{3A620A5F-E0F3-47DC-B289-EF7A92588531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dentist.Persistance", "Infrastructure\Dentist.Persistance\Dentist.Persistance.csproj", "{3A620A5F-E0F3-47DC-B289-EF7A92588531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dentist.WebApi", "Presentation\Dentist.WebApi\Dentist.WebApi.csproj", "{37569089-D781-4492-BAAD-0AC22308A87B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dentist.WebApi", "Presentation\Dentist.WebApi\Dentist.WebApi.csproj", "{37569089-D781-4492-BAAD-0AC22308A87B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Çözüm Öğeleri", "Çözüm Öğeleri", "{554A903B-AE8F-47D5-A221-EE4EEC12935D}"
 	ProjectSection(SolutionItems) = preProject

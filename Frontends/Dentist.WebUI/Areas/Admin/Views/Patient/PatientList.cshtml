@@ -1,0 +1,48 @@
+﻿@model List<ResultPatientDto>
+@{
+    ViewData["Title"] = "PatientList";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hasta Listesi</h4>
+            <a href="/Admin/Patient/CreatePatient/" class="btn btn-success"><i class="fas fa-plus-circle"></i> Yeni Hasta Kayıdı</a><br /><br />
+            <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Kullanıcı no</th>
+                            <th>Ad Soyad</th>
+                            <th>Telefon</th>
+                            <th>Doğum Tarihi</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                    </thead>
+                    @foreach (var item in Model)
+                    {
+                        <tbody>
+                            <tr>
+                                <td>@item.UserId</td>
+                                <td>@item.NameSurname</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Age.ToLongDateString()</td>
+                                <td>
+                                    <button class="btn btn-danger deleteBtn" data-id="@item.PatientId"><i class="fas fa-trash-alt"></i>  Sil</button>
+                                </td>
+                                <td><a href="/Admin/Patient/UpdatePatient/@item.PatientId" class="btn btn-warning"><i class="fas fa-edit"></i> Güncelle</a></td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setupDeleteConfirmation('.deleteBtn', '/Admin/Patient/RemovePatient/');
+    });
+</script>
