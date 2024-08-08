@@ -1,40 +1,44 @@
-﻿<section class="features">
+﻿@model List<ResultSliderCardDto>
+<section class="features">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
+				@foreach(var item in Model)
+				{
 				<div class="feature-block d-lg-flex">
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
-							<i class="icofont-surgeon-alt"></i>
+							<i class="@item.Icon"></i>
 						</div>
-						<span>24 Saat Service</span>
-						<h4 class="mb-3">Online Appoinment</h4>
-						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
-						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+						<span>@item.Title</span>
+						<h4 class="mb-3">@item.Subtitle</h4>
+						<p class="mb-4">@item.Description</p>
+						<a href="appoinment.html" class="btn btn-main btn-round-full">BIR RANDEVU OLUSTURUN</a>
 					</div>
 
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>
 						</div>
-						<span>Timing schedule</span>
-						<h4 class="mb-3">Working Hours</h4>
+						<span>@item.Title</span>
+						<h4 class="mb-3">@item.Subtitle2</h4>
 						<ul class="w-hours list-unstyled">
-							<li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">@item.Hour1 : <span>@item.day1</span></li>
+							<li class="d-flex justify-content-between">@item.Hour2 : <span>@item.day2</span></li>
+							<li class="d-flex justify-content-between">@item.Hour3 : <span>@item.day3</span></li>
 						</ul>
 					</div>
 
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
-							<i class="icofont-support"></i>
+							<i class="@item.Icon3"></i>
 						</div>
-						<span>Emegency Cases</span>
-						<h4 class="mb-3">1-800-700-6200</h4>
-						<p>Get ALl time support for emergency.We have introduced the principle of family medicine.Get Conneted with us for any urgency .</p>
+						<span>@item.Title3</span>
+						<h4 class="mb-3">@item.Subtitle3</h4>
+						<p>@item.Description3</p>
 					</div>
 				</div>
+				}
 			</div>
 		</div>
 	</div>
